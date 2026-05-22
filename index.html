@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Portfolio</title>
+    <link rel="icon" href="fevilogo.ico" sizes="32x32" type="image/jpeg">
+    <link rel="icon" href="fevilogo.fevilogo" sizes="16x16" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">DB</a>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i> </button>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="/profile.jpg" alt="Profile Picture">
+            </div>
+            <div class="hero-text">
+                <h1>Dinesh Bista</h1>
+                <p>IT student, Software Enginner, Problem solver</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-cards-container">
+            <div class="about-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <p>Currently pursuing a degree in Information Technology with a focus on software development.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Experience</h3>
+                <p>Passionate about creating efficient, scalable solutions and learning new technologies.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-heart"></i>
+                <h3>Interests</h3>
+                <p>Coding, problem-solving, and exploring new technologies in software development.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-cards-container">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+                <p>95%</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+                <p>85%</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+                <p>75%</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-php"></i>
+                <h3>PHP</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%;"></div>
+                </div>
+                <p>65%</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 55%;"></div>
+                </div>
+                <p>55%</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="/watchp.png" alt="Project 1" class="project-image">
+                <h3>Digital Watch</h3>
+                <p>A colorful fullscreen digital watch that displays the current time. Perfect for keeping track of time while working on your computer.</p>
+                <div class="links">
+                    <a href="#" target="_blank"><i class="fas fa-eye"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/wtp.png" alt="Project 2" class="project-image">
+                <h3>Word Transformer</h3>
+                <p>Enter any word and see it instantly transformed: reversed, length counted, converted to uppercase, and vowel count shown. Great for string manipulation practice and games.</p>
+                <div class="links">
+                    <a href="#" target="_blank"><i class="fas fa-eye"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/AI.png" alt="Project 3" class="project-image">
+                <h3>SBN.AI (Second Brain AI)</h3>
+                <p>An AI assistant that remembers information you tell it, like your name or notes. Just ask, and it recalls your saved info—your personal digital memory.</p>
+                <div class="links">
+                    <a href="#" target="_blank"><i class="fas fa-eye"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form id="contactForm" method="post">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your@email.com" required>
+            <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+            <button type="submit" class="submit-button">
+                <i class="fas fa-paper-plane"></i> <span id="buttonText">Send Message</span>
+            </button>
+            <p id="responseMessage" class="hidden"></p>
+        </form>
+    </section>
+
+    <footer>
+        <a href="#home" class="logo">DB</a>
+        <div class="social-icons">
+            <a href="https://github.com/BistaDinesh" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/bista_dinesh50" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy;2024 Dinesh Bista. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
